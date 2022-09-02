@@ -22,6 +22,7 @@ namespace APICore.Data.UoW
         public IGenericRepository<UserToken> UserTokenRepository { get; set; }
         public IGenericRepository<Setting> SettingRepository { get; set; }
         public IGenericRepository<Log> LogRepository { get; set; }
+        public IGenericRepository<Comment> CommentRepository { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public async Task<int> CommitAsync()
         {

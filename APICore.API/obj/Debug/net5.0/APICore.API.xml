@@ -88,6 +88,11 @@
             </summary>
             <param name="email">User email.</param>
         </member>
+        <member name="M:APICore.API.Controllers.CommentsController.GetAllComments">
+            <summary>
+            List all comments. Requires authentication.
+            </summary>       
+        </member>
         <member name="M:APICore.API.Controllers.DiagnosticsController.HealthCheckActionResult">
             <summary>
             Api health check that allows us to see the status of the external and infrastructure services.

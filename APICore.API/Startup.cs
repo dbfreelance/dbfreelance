@@ -66,6 +66,7 @@ namespace APICore.API
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped(x => new BlobServiceClient(Configuration.GetConnectionString("Azure")));
             services.AddTransient<IAccountService, AccountService>();
+            //services.AddTransient<ICommentService, CommentService>();
             services.AddTransient<ISettingService, SettingService>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<ILogService, LogService>();

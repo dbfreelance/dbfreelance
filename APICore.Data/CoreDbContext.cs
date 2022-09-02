@@ -8,7 +8,7 @@ namespace APICore.Data
         public CoreDbContext(DbContextOptions<CoreDbContext> options) : base(options)
         {
         }
-
+        public DbSet<User> Comments { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Setting> Setting { get; set; }
         public DbSet<Log> Log { get; set; }
