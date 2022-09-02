@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APICore.API</name>
+    </assembly>
+    <members>
+        <member name="M:APICore.API.Controllers.AccountController.Register(APICore.Common.DTO.Request.SignUpRequest)">
+            <summary>
+            Register a user.
+            </summary>
+            <param name="register">
+            Register request object. Include email used as username, password, full name and
+            birthday. Valid password should have: 1- Non alphanumeric characters 2- Uppercase
+            letters 3- Six characters minimun
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.Login(APICore.Common.DTO.Request.LoginRequest)">
+            <summary>
+            Login a user.
+            </summary>
+            <param name="loginRequest">
+            Login request object. Include email used as username and password.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.Logout">
+            <summary>
+            Logout a user. Requires authentication.
+            </summary>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.GlobalLogout">
+            <summary>
+            Logout a user. This will logout the user from all the devices by deleting all his
+            tokens. This is triggered by the user using one of his tokens (the used in the device
+            that triggers this action). Requires authentication.
+            </summary>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.Refresh(APICore.Common.DTO.Request.RefreshTokenRequest)">
+            <summary>
+            Refresh token.
+            </summary>
+            <param name="refreshToken">
+            Refresh token request object. Include old token and refresh token. This info will be
+            used to validate the info against our database.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.ChangePassword(APICore.Common.DTO.Request.ChangePasswordRequest)">
+            <summary>
+            Change Password. Requires authentication.
+            </summary>
+            <param name="changePassword">
+            Change password request object. Include old password, new password, and confirm password.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.UpdateProfile(APICore.Common.DTO.Request.UpdateProfileRequest)">
+            <summary>
+            Update Profile. Requires authentication.
+            </summary>
+            <param name="updateProfile">
+            Update Profile request object. Include fullname, gender and birthday.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.ValidateToken(APICore.Common.DTO.Request.ValidateTokenRequest)">
+            <summary>
+            Validate token.
+            </summary>
+            <param name="validateToken">
+            Refresh token request object. Include old token and refresh token. This info will be
+            used to validate the info against our database.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.ChangeAccountStatus(APICore.Common.DTO.Request.ChangeAccountStatusRequest)">
+            <summary>
+            Change Account Status. Requires authentication.
+            </summary>
+            <param name="changeAccountStatus">
+            Change account status request object. Include identity and status to change.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.UploadAvatar(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload Avatar. Requires authentication.
+            </summary>
+            <param name="file">Avatar file.</param>
+        </member>
+        <member name="M:APICore.API.Controllers.AccountController.ForgotPassword(System.String)">
+            <summary>
+            Forgot password endpoint. The user receive an email with a new password.
+            </summary>
+            <param name="email">User email.</param>
+        </member>
+        <member name="M:APICore.API.Controllers.DiagnosticsController.HealthCheckActionResult">
+            <summary>
+            Api health check that allows us to see the status of the external and infrastructure services.
+            </summary>
+        </member>
+        <member name="M:APICore.API.Controllers.LogController.GetAllLogs(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Int32,System.Int32)">
+            <summary>
+            List all logs. Requires authentication.
+            </summary>       
+            <param name="page">The page to be displayed. 1 by default.</param>
+            <param name="perPage">The number of logs to be displayed per page. 10 by default.</param>
+            <param name="sortOrder"></param>
+            <param name="logType">
+            Type of log. Possible values:-1: All, 0-APPLICATION, 1-SYSTEM, 2-SECURITY
+            </param>
+            <param name="eventTypeLog">
+            Type of event log. Possible values:-1: All, 0-INFORMATION, 1-WARNING, 2-ERROR
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.LogController.GetCurrentUserLogs(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            List current user's logs. Requires authentication.
+            </summary>     
+            <param name="logType">
+            Type of log. Possible values:-1: All, 0-APPLICATION, 1-SYSTEM, 2-SECURITY
+            </param>
+            <param name="eventTypeLog">
+            Type of event log. Possible values:-1: All, 0-INFORMATION, 1-WARNING, 2-ERROR
+            </param>
+            <param name="page">The page to be displayed. 1 by default.</param>
+            <param name="perPage">The number of logs to be displayed per page. 10 by default.</param>
+            <param name="sortOrder"></param>
+        </member>
+        <member name="M:APICore.API.Controllers.LogController.GetLogsByUserId(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            List logs by a specified user. Requires authentication.
+            </summary>
+            <param name="logType">
+            Type of log. Possible values:-1: All, 0-APPLICATION, 1-SYSTEM, 2-SECURITY
+            </param>
+            <param name="eventTypeLog">
+            Type of event log. Possible values:-1: All, 0-INFORMATION, 1-WARNING, 2-ERROR
+            </param>
+            /// <param name="page">The page to be displayed. 1 by default.</param>
+            <param name="perPage">The number of logs to be displayed per page. 10 by default.</param>
+            <param name="sortOrder"></param>
+            <param name="serialUser"></param> The serial user is a user identity.
+        </member>
+        <member name="M:APICore.API.Controllers.SettingController.SetSetting(APICore.Common.DTO.Request.SettingRequest)">
+            <summary>
+            Add a setting. Requires authentication.
+            </summary>
+            <param name="setting">
+            Setting request object. Include key and value. Key is unique in database.
+            </param>
+        </member>
+        <member name="M:APICore.API.Controllers.SettingController.GetSetting(System.String)">
+            <summary>
+            Get setting. Requires authentication.
+            </summary>
+            <param name="key">Setting key.</param>
+        </member>
+        <member name="M:APICore.API.Utils.HttpContextExtension.CurrentUser(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Get current user id from claim principal
+            </summary>
+            <param name="httpContextAccessor"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

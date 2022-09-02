@@ -1,0 +1,14 @@
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\bin\Debug\net5.0\APICore.Common.deps.json
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\bin\Debug\net5.0\APICore.Common.dll
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\bin\Debug\net5.0\APICore.Common.pdb
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\bin\Debug\net5.0\APICore.Common.xml
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.csproj.AssemblyReference.cache
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.AssemblyInfoInputs.cache
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.AssemblyInfo.cs
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.csproj.CoreCompileInputs.cache
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.dll
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\refint\APICore.Common.dll
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.xml
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\APICore.Common.pdb
+C:\Users\Dariel\Documents\GitHub\netcore-api\netcore-api\APICore\APICore.Common\obj\Debug\net5.0\ref\APICore.Common.dll
